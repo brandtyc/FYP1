@@ -1,0 +1,92 @@
+div#banner {
+    color: white;
+    background-color: darkblue;
+}
+
+div#company-name {
+    padding-left: 2%;
+    width: 20%;
+    font-weight: bold;
+    font-size: 1.8em;
+    display: inline;
+}
+
+span#greetings {
+    padding-right: 2%;
+    display: block;
+    float: right;
+    font-size: 1.5em;
+}
+
+ul.menu {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden; /* this part doesn't hide the menu options */
+	/* overflow-x: auto; */
+	background-color: blue;
+	width: 100%;
+	/* inherit from body */
+	font-size: inherit;
+	font-family: inherit;
+}
+
+ul.menu li.empty {
+	float: left;
+}
+
+ul.menu li.dropdown  {
+	float: left;
+}
+
+ul.menu li.empty a, .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+ul.menu li.empty a:hover, .dropdown:hover .dropbtn {
+	background-color: powderblue;
+	color: blue;
+}
+
+li.dropdown {
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 160px;
+	/*box-shadow: 0px 8px 20px 0px rgba(47, 49, 165, 0.7);*/
+	z-index: 1;
+}
+
+.dropdown-content a {
+	background-color: powderblue;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: blue;
+	color: white;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+p {
+	text-align: center
+}
