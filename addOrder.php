@@ -22,6 +22,9 @@
 
         // insert in database
         $rs = mysqli_query($con, $sql);
+        header('Location:addOrder.php');
+        // close connection
+        $con->close();
     }
 ?>
 
@@ -37,7 +40,7 @@
         ?>
         <h1>Add order</h1>
         <br />
-        <form name="userInput" method="post" rel="noopener">
+        <form name="userInput" method="post">
             <table border="0" cellpadding="10" cellspacing="0" width="500" align="left" class="tbl-qa">
                 <thead>
                     <tr>
@@ -92,13 +95,9 @@
                     </tr>
                 </tbody>
             </table>
-
-            <input type="submit" id="insert" name="insert" value="Insert" onClick="javascript: return confirm('Please confirm to add!');" >
+            <input type="submit" id="insert" name="insert" value="Insert">
             <input type="reset" id="clear" name="clear" value="Clear form">
             <br>
         </form>
-        <?php
-            $con->close();
-        ?>
     </body>
 </html>
